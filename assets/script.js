@@ -76,7 +76,7 @@ $(window).on("load", function() {
         let operacion = 2;
         
         // Llamada ajax
-        $.post("/assets/action.php", { op:operacion,id:idSeleccionado,nombre:nombreSeleccionado}, function (respuestaJSON) {
+        $.post("../assets/action.php", { op:operacion,id:idSeleccionado,nombre:nombreSeleccionado}, function (respuestaJSON) {
             console.log(respuestaJSON);
             let respuesta = JSON.parse(respuestaJSON);
             let contenido = '';
@@ -116,7 +116,7 @@ $(window).on("load", function() {
         let operacion = 1;
 
         // Llamada ajax
-        $.post("/assets/action.php", { op:operacion}, function (respuestaJSON) {
+        $.post("../assets/action.php", { op:operacion}, function (respuestaJSON) {
             console.log(respuestaJSON);
             let respuesta = JSON.parse(respuestaJSON);
             let contenido = '';
@@ -151,7 +151,7 @@ $(window).on("load", function() {
         let operacion = 3;
         
         // Llamada ajax
-        $.post("/assets/action.php", { op:operacion,id:idSeleccionado}, function (respuestaJSON) {
+        $.post("../assets/action.php", { op:operacion,id:idSeleccionado}, function (respuestaJSON) {
             console.log(respuestaJSON);
             let respuesta = JSON.parse(respuestaJSON);
             let contenido = '';
