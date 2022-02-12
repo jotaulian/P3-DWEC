@@ -26,7 +26,7 @@ $(window).on("load", function() {
         $.getJSON("pokedex.json", function(datos) {
             if(nombre){
                 $.each(datos, function(i,pokemon) {
-                if(pokemon.name.english == nombre){
+                if((pokemon.name.english.toLowerCase()).includes(nombre.toLowerCase())){
                     cuerpoTabla
                         .append(
                             `<tr>
